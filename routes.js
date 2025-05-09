@@ -20,6 +20,10 @@ const routes = [
         templateUrl: './pages/video.html'
     },
     {
+        path: '/concerts',
+        templateUrl: './pages/concerts.html'
+    },
+    {
         path: '/botiga',
         templateUrl: './pages/botiga.html'
     },
