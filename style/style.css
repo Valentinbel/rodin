@@ -55,6 +55,7 @@ li.botiga {
 
 .logo {
     display: block;
+    justify-items: center;
 }
 
 .logo img {
