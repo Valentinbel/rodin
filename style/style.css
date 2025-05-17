@@ -4,9 +4,15 @@
     --darkBlue: #1a0274;
 }
 
-body {
+html, body {
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /*NAVBAR*/
@@ -60,5 +66,14 @@ li.botiga {
 
 .logo img {
     height: 50px;
-  }
+}
   
+/*FOOTER sociau*/
+footer {
+  margin-top: auto;
+  padding: 15px;
+}
+.footer {
+    justify-content: center;
+    display: flex
+}
