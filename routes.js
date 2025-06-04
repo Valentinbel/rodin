@@ -1,31 +1,31 @@
 const routes = [
     {
         path: '/',
-        templateUrl: './src/pages/home.html'
+        templateUrl: './pages/home.html'
     },
     {
         path: '/contact-us',
-        templateUrl: './src/pages/contact.html'
+        templateUrl: './pages/contact.html'
     },
     {
         path: '/bio',
-        templateUrl: './src/pages/bio.html'
+        templateUrl: './pages/bio.html'
     },
     {
         path: '/musica',
-        templateUrl: './src/pages/musica.html'
+        templateUrl: './pages/musica.html'
     },
     {
         path: '/video',
-        templateUrl: './src/pages/video.html'
+        templateUrl: './pages/video.html'
     },
     {
         path: '/concerts',
-        templateUrl: './src/pages/concerts.html'
+        templateUrl: './pages/concerts.html'
     },
     {
         path: '/botiga',
-        templateUrl: './src/pages/botiga.html'
+        templateUrl: './pages/botiga.html'
     },
 ]
 // remplacer la template par un fichier html

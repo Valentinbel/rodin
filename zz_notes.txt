@@ -4,3 +4,22 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_sticky
 2 lines : Centered répartis 
 https://codepen.io/zilleali/pen/vEYevYK 
 
+A FAIRE: 
+GLOBAL
+    * Changer les font
+SOCIAU:
+    * Remplacer icones Sociaux par ceux de RODIN et les mettre dasn public. 
+        - Avec le hover. Cf neblum.
+        - repartition et size max.
+        - avoir les bons liens.
+NAVBAR: 
+    * Size max ul id="menu" (la même): Variable. 
+
+PAGES: 
+    * Gerer les margin des pages. 
+
+
+
+
+
+--------------------FAIT--------------------
