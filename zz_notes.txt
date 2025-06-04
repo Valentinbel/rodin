@@ -6,20 +6,36 @@ https://codepen.io/zilleali/pen/vEYevYK
 
 A FAIRE: 
 GLOBAL
-    * Changer les font
+
 SOCIAU:
     * Remplacer icones Sociaux par ceux de RODIN et les mettre dasn public. 
         - Avec le hover. Cf neblum.
         - repartition et size max.
         - avoir les bons liens.
 NAVBAR: 
-    * Size max ul id="menu" (la même): Variable. 
+    * Size max ul id="menu" (la même que images visuels pages): Variable. 
 
 PAGES: 
-    * Gerer les margin des pages. 
 
+CSS 
+    HOVER LINKS
+    rouge clair hover: e35b7f ************* A faire 
 
+    TYPO: AVENIR
+    heavy —> titres
+    light —> 2025 + texte général (bio & terms of service)
+
+    medium —> MUSICA / VIDEO / CONCERTS
+    black —> BIO / BOTIGA
 
 
 
 --------------------FAIT--------------------
+GLOBAL
+    * Changer les font 
+        TYPO: AVENIR
+PAGES: 
+    * Gerer les margin des pages. 
+CSS 
+    fond blanc cassé: fffef8
+    rouge: e3003e
