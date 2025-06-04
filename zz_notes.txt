@@ -1,0 +1,6 @@
+Sticky navbar: 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_sticky
+
+2 lines : Centered répartis 
+https://codepen.io/zilleali/pen/vEYevYK 
+
