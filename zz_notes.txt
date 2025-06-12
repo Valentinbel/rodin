@@ -34,6 +34,7 @@ CSS
 * Voir comment configurer les titres avec tailwindcss
 * Sticky ne marche plus avec tailwindcss
 * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
+* Comportement navbar en mode mbile
 
 
 
