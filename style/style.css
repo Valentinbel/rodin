@@ -104,3 +104,35 @@ footer {
     justify-content: center;
     display: flex
 }
+
+div.footer img {
+    max-height: 3rem;
+}
+
+div.footer a {
+    max-height: 3rem;
+}
+
+#spotify img:nth-child(2),
+#apple img:nth-child(2),
+#youTube img:nth-child(2),
+#instagram img:nth-child(2),
+#tikTok img:nth-child(2) {
+  display: none; 
+}
+
+#spotify:hover img:nth-child(1), 
+#apple:hover img:nth-child(1), 
+#youTube:hover img:nth-child(1), 
+#instagram:hover img:nth-child(1), 
+#tikTok:hover img:nth-child(1) {
+  display: none;
+}
+
+#spotify:hover img:nth-child(2),
+#apple:hover img:nth-child(2), 
+#youTube:hover img:nth-child(2), 
+#instagram:hover img:nth-child(2),
+#tikTok:hover img:nth-child(2)  {
+  display: block;
+}
