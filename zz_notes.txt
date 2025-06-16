@@ -6,17 +6,19 @@ https://codepen.io/zilleali/pen/vEYevYK
 
 A FAIRE: 
 GLOBAL
-
-SOCIAU:
-    * Remplacer icones Sociaux par ceux de RODIN et les mettre dasn public. 
-        - Avec le hover. Cf neblum.
-        - repartition et size max.
-        - avoir les bons liens.
+    * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
+    
 NAVBAR: 
     * Size max ul id="menu" (la même que images visuels pages): Variable. 
+    * Comportement navbar en mode mbile
 
 PAGES: 
-
+    * video:
+        - Comportement web 
+        - Comportement mobile
+    * Image
+        - Comportement web 
+        - Comportement mobile
 CSS 
     HOVER LINKS
     rouge clair hover: e35b7f ************* A faire 
@@ -30,11 +32,7 @@ CSS
 
 
 
-* Mettre des titres (h1) pour chaque page.
-* Voir comment configurer les titres avec tailwindcss
-* Sticky ne marche plus avec tailwindcss
-* Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
-* Comportement navbar en mode mbile
+
 
 
 
@@ -42,22 +40,3 @@ pour les liens des sorties audio on mettra que spotify dans un premier temps,
 je pense que c'est mieux que renvoyer vers un linktree qui ferait un click en plus. 
 Pour les vidéos je comprends pas ta question? 
 dans tous les cas, pour les audio autant que les vidéos, fais-en qu'un de chaque pour tester après je copierai les autres
-
-
---------------------FAIT--------------------
-GLOBAL
-    * Changer les font 
-        TYPO: AVENIR
-PAGES: 
-    * Gerer les margin des pages. 
-CSS 
-    fond blanc cassé: fffef8
-    rouge: e3003e
-
-FOOTER: 
-    * LIENS  spotify https://open.spotify.com/intl-fr/artist/7cMWfV0yjQ0GPs8fiDp3UA 
-    apple https://music.apple.com/fr/artist/rod%C3%ADn/1495701565
-    youtube https://www.youtube.com/c/rodínmusica
-    insta https://www.instagram.com/rodiin
-    tiktok https://www.tiktok.com/@_rodiin_
-    * Hover
