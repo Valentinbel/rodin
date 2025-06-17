@@ -1,24 +1,12 @@
-Sticky navbar: 
-https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_sticky
-
-2 lines : Centered répartis 
-https://codepen.io/zilleali/pen/vEYevYK 
-
 A FAIRE: 
-GLOBAL
-    * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
-    
-NAVBAR: 
-    * Size max ul id="menu" (la même que images visuels pages): Variable. 
-    * Comportement navbar en mode mbile
 
-PAGES: 
-    * video:
-        - Comportement web 
-        - Comportement mobile
-    * Image
-        - Comportement web 
-        - Comportement mobile
+NAVBAR: 
+    * Repartition des icones en mode mobile et desktop.
+        -> Hauteur de bio/botiga selon desktop / mobile
+            -> A quel moment on change ?
+        -> changement de comportement pour pas que ca parte sur 2 lignes. 
+            -> taille du logo Rodin a changer. (ou des logos bio/botiga)
+
 CSS 
     HOVER LINKS
     rouge clair hover: e35b7f ************* A faire 
@@ -29,8 +17,22 @@ CSS
 
     medium —> MUSICA / VIDEO / CONCERTS
     black —> BIO / BOTIGA
+    
+PAGES: 
+    * video:
+        - Comportement web 
+        - Comportement mobile
+    * Image
+        - Comportement web 
+        - Comportement mobile
 
+GLOBAL
+    * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
+    * Vérifie que le lien tailwind dans index est correct. 
 
+NAVBAR: 
+    * Size max ul class="menu" (la même que images visuels pages): Variable. 
+    * Comportement navbar en mode mbile
 
 
 

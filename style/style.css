@@ -50,6 +50,7 @@ body {
     line-height: 1.6;
     color: #374151;
     text-align: justify;
+    text-justify: inter-character;
 }
 
 /*NAVBAR*/
@@ -68,22 +69,43 @@ li {
     display: inline-block;
 }
 
-li a {
+.center {
+    text-align: center;
+    margin-top: 2dvh;
+}
+
+.center li a, .menu li a {
     display: block;
     color: var(--font-red);
     text-align: center;
-    padding: 8px 16px 3px 16px;
+    padding: 2dvh 2vw;
     text-decoration: none;
 }
+
+.menu li a {
+    padding: 2dvh 2vw;
+}
+
+li.logo a, li.bio a, li.botiga a{
+    padding-bottom: 0;
+}
   
-li a:hover {
+.menu li a:hover {
     /*background-color: var(--darkBlue);*/
     color: var(--font-red_hover);
 }
 
 li.botiga a, li.bio a {
-    margin: 0 2rem;
+    margin: 0 3vw;
 }
+
+/*li.bio a {
+    margin-left: 3vw;
+}
+
+li.botiga a {
+    margin-right: 3vw;
+}*/
 
 li.bio img, li.botiga img {
     height: 60px;
@@ -95,10 +117,6 @@ li.bio {
 
 li.botiga {
     float: right;
-}
-
-.center {
-    text-align: center; 
 }
 
 .logo {
