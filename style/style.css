@@ -4,21 +4,44 @@
     --font-red_hover : #e35b7f;
     --darkBlue: #1a0274;
 }
-
 @font-face {
-  font-family: 'Avenir';
-  src: url('./public/fonts/avenir.ttc') format('truetype-collection');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Avenir';
+    src: url('./public/fonts/Avenir-Light-07.woff2') format('woff2'),
+        url('./public/fonts/Avenir-Light-07.woff') format('woff'),
+        url('./public/fonts/Avenir-Light-07.ttf') format('truetype');
+    font-weight: 300; /* ou light */
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
   font-family: 'Avenir';
-  src: url('./public/fonts/avenir.ttc') format('truetype-collection');
+    src: url('./public/fonts/Avenir-Medium-09.woff2') format('woff2'),
+        url('./public/fonts/Avenir-Medium-09.woff') format('woff'),
+        url('./public/fonts/Avenir-Medium-09.ttf') format('truetype');
+    font-weight: 500; /* ou medium */
+    font-style: normal;
   font-display: swap;
-  font-weight: bold;
-  font-style: multiple;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('./public/fonts/Avenir-Heavy-05.woff2') format('woff2'),
+        url('./public/fonts/Avenir-Heavy-05.woff') format('woff'),
+        url('./public/fonts/Avenir-Heavy-05.ttf') format('truetype');
+    font-weight: 800;
+  font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+    src: url('./public/fonts/Avenir-Black-03.woff2') format('woff2'),
+        url('./public/fonts/Avenir-Black-03.woff') format('woff'),
+        url('./public/fonts/Avenir-Black-03.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  font-display: swap;
 }
 
 html, body {
@@ -31,6 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Avenir', sans-serif;
+    font-weight: 300;
     background-color: var(--bg-white);
 }
 
@@ -41,7 +65,7 @@ body {
 /* Redéfinir les tags html*/
 .page h1 {
     font-size: 2.25rem;/* 36px */
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.2;
     margin-bottom: 1rem;
 } 
@@ -83,7 +107,8 @@ li {
 }
 
 .menu li a {
-    padding: 2dvh 2vw;
+    padding: 0.5dvh 2vw;
+    font-weight: 500;
 }
 
 li.logo a, li.bio a, li.botiga a{
