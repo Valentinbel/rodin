@@ -1,5 +1,15 @@
 A FAIRE: 
 
+img: 
+    verif si bonne taille. 
+    Reduire poids des images et le dire à Rodin.
+    margin top et bottom
+iframe
+    margins
+    size. 
+menu    
+    revoir padding/margin pour qu'il n'y ait pas d'espace entre les liens
+
 NAVBAR: 
     * Repartition des icones en mode mobile et desktop.
         -> Hauteur de bio/botiga selon desktop / mobile
@@ -8,14 +18,7 @@ NAVBAR:
             -> taille du logo Rodin a changer. (ou des logos bio/botiga)
 
 CSS 
-    HOVER LINKS
-    rouge clair hover: e35b7f ************* A faire 
-
     TYPO: AVENIR
-    heavy —> titres
-    light —> 2025 + texte général (bio & terms of service)
-
-    medium —> MUSICA / VIDEO / CONCERTS
     black —> BIO / BOTIGA
     
 PAGES: 

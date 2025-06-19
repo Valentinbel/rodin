@@ -15,13 +15,13 @@
 }
 
 @font-face {
-  font-family: 'Avenir';
+    font-family: 'Avenir';
     src: url('./public/fonts/Avenir-Medium-09.woff2') format('woff2'),
         url('./public/fonts/Avenir-Medium-09.woff') format('woff'),
         url('./public/fonts/Avenir-Medium-09.ttf') format('truetype');
     font-weight: 500; /* ou medium */
     font-style: normal;
-  font-display: swap;
+    font-display: swap;
 }
 
 @font-face {
@@ -30,18 +30,18 @@
         url('./public/fonts/Avenir-Heavy-05.woff') format('woff'),
         url('./public/fonts/Avenir-Heavy-05.ttf') format('truetype');
     font-weight: 800;
-  font-style: normal;
+    font-style: normal;  
     font-display: swap;
 }
 
 @font-face {
-  font-family: 'Avenir';
+    font-family: 'Avenir';
     src: url('./public/fonts/Avenir-Black-03.woff2') format('woff2'),
         url('./public/fonts/Avenir-Black-03.woff') format('woff'),
         url('./public/fonts/Avenir-Black-03.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
-  font-display: swap;
+    font-display: swap;
 }
 
 html, body {
@@ -86,7 +86,6 @@ nav {
 
 ul {
     overflow: hidden;
-    background-color: var(--bg-white);
 }
 
 li {
@@ -95,14 +94,15 @@ li {
 
 .center {
     text-align: center;
-    margin-top: 2dvh;
+    padding-top: 2dvh;
+    background-color: var(--bg-white);
 }
 
 .center li a, .menu li a {
     display: block;
     color: var(--font-red);
     text-align: center;
-    padding: 2dvh 2vw;
+    padding: 0 2vw;
     text-decoration: none;
 }
 
@@ -145,7 +145,6 @@ li.botiga {
 }
 
 .logo {
-    display: block;
     justify-items: center;
 }
 
@@ -161,7 +160,7 @@ footer {
 
 .footer {
     justify-content: center;
-    display: flex
+    display: flex;
 }
 
 div.footer img {
