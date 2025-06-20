@@ -10,13 +10,22 @@ iframe
 menu    
     revoir padding/margin pour qu'il n'y ait pas d'espace entre les liens
 
+bio/botiga: display flex. align-items
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    
 NAVBAR: 
     * Repartition des icones en mode mobile et desktop.
         -> Hauteur de bio/botiga selon desktop / mobile
             -> A quel moment on change ?
         -> changement de comportement pour pas que ca parte sur 2 lignes. 
             -> taille du logo Rodin a changer. (ou des logos bio/botiga)
-
+        -> En format tel, le mewnu il fait la largeur du logo
+        -> choper la largeur du menu, on l'applique a la largeur des images. 
+            Comme les images sont des carrés, on dit que que sera la hauteur des vidéos. 
+            -> Comment on calcule la mrge du body ?
+        V2. Mettre le menu width en valeur definie avec répartition. 
+            Prendre cette meme valeur pour la largeur carre et hauteur video. 
+            Penser comment ca fait avec le texte. 
 CSS 
     TYPO: AVENIR
     black —> BIO / BOTIGA
@@ -36,10 +45,6 @@ GLOBAL
 NAVBAR: 
     * Size max ul class="menu" (la même que images visuels pages): Variable. 
     * Comportement navbar en mode mbile
-
-
-
-
 
 pour les liens des sorties audio on mettra que spotify dans un premier temps, 
 je pense que c'est mieux que renvoyer vers un linktree qui ferait un click en plus. 
