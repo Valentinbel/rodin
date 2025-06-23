@@ -2,10 +2,8 @@ A FAIRE:
 
 img: 
     verif si bonne taille. 
-    Reduire poids des images et le dire à Rodin.
-    margin top et bottom
+
 iframe
-    margins
     size. 
 menu    
     revoir padding/margin pour qu'il n'y ait pas d'espace entre les liens
