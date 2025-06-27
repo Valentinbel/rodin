@@ -113,10 +113,28 @@ li {
     background-color: var(--bg-white);
 }
 
+.firstLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+li.botiga a, li.bio a {
+    margin: 0 3vw;
+}
+
+li.logo img, li.bio img, li.botiga img {
+    max-height: 60px;
+}
+
+li.logo a, li.bio a, li.botiga a{
+    padding-bottom: 0;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     margin-inline: 18%; /*****************paliers***********/
+    border-bottom: 1px solid var(--font-red_hover); /*????????????*/
 }
 
 .center li a, .menu li a {
@@ -131,45 +149,9 @@ li {
     padding: 0.5dvh;
     font-weight: 500;
 }
-
-li.logo a, li.bio a, li.botiga a{
-    padding-bottom: 0;
-}
   
 .menu li a:hover {
     color: var(--font-red_hover);
-}
-
-li.botiga a, li.bio a {
-    margin: 0 3vw;
-}
-
-/*li.bio a {
-    margin-left: 3vw;
-}
-
-li.botiga a {
-    margin-right: 3vw;
-}*/
-
-li.bio img, li.botiga img {
-    height: 60px;
-}
-
-li.bio {
-    float: left;
-}
-
-li.botiga {
-    float: right;
-}
-
-.logo {
-    justify-items: center;
-}
-
-.logo img {
-    height: 60px;
 }
   
 /*FOOTER sociau*/

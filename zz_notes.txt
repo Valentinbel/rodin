@@ -1,23 +1,20 @@
 A FAIRE: 
 
+#app margin responsive
+
 img: 
     verif si bonne taille. 
-
 iframe
     size. 
 menu    
     revoir padding/margin pour qu'il n'y ait pas d'espace entre les liens
-
-bio/botiga: display flex. align-items
-    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     
 NAVBAR: 
     * Repartition des icones en mode mobile et desktop.
         -> Hauteur de bio/botiga selon desktop / mobile
             -> A quel moment on change ?
-        -> changement de comportement pour pas que ca parte sur 2 lignes. 
-            -> taille du logo Rodin a changer. (ou des logos bio/botiga)
-        -> En format tel, le mewnu il fait la largeur du logo
+        -> check vite fait que firstLine soit pareil que menu (harmoniser le css)
+        -> En format tel, le menu il doit faire la largeur du logo
         -> choper la largeur du menu, on l'applique a la largeur des images. 
             Comme les images sont des carrés, on dit que que sera la hauteur des vidéos. 
             -> Comment on calcule la mrge du body ?
@@ -45,6 +42,4 @@ NAVBAR:
     * Comportement navbar en mode mbile
 
 pour les liens des sorties audio on mettra que spotify dans un premier temps, 
-je pense que c'est mieux que renvoyer vers un linktree qui ferait un click en plus. 
-Pour les vidéos je comprends pas ta question? 
 dans tous les cas, pour les audio autant que les vidéos, fais-en qu'un de chaque pour tester après je copierai les autres
