@@ -61,7 +61,7 @@ body {
 
 #app { /*all that is not in index: all without navbar and footer*/
     margin: 2rem 20%;
-    transition: 0.4s; /* BYO prefixes */
+    transition: 0.4s;
 }
 
 /* Redéfinir les tags html*/
@@ -77,8 +77,8 @@ body {
     text-align: justify;
     text-justify: inter-character;
 }
+
 /*PAGES*/
-/*******************ne marche pas bien**************************/
 .page a.imgTitres {
     display: flex;
     justify-content: center;
@@ -135,8 +135,8 @@ li.logo a, li.bio a, li.botiga a{
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-inline: 18%; /*****************paliers***********/
-    border-bottom: 1px solid var(--font-red_hover); /*????????????*/
+    margin-inline: 20%;
+    border-bottom: 1px solid var(--font-red_hover); 
 }
 
 .center li a, .menu li a {
@@ -202,5 +202,10 @@ div.footer a {
 @media (max-width:961px) {
     #app { 
         margin: 2rem 7%;
+    }
+
+    .menu {
+        justify-content: center;
+        border-bottom: none;
     }
 }

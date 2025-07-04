@@ -1,15 +1,12 @@
 A FAIRE: 
+    et ca. https://tailwindcss.com/docs/responsive-design
+    Trouver un equivalent lg: classe width tailwind qui va breaker tout seul ? 
 
 NAVBAR: 
-    * ajuster width menu sur #app (20%)
-    * Passer Bio/Botiga en img + texte (BLACK)
-        CSS TYPO: AVENIR black —> BIO / BOTIGA
-        voir si nécessaire ou pas? -> on dirait que oui
-        Du coup "li.botiga a, li.bio a" moins de marge quand on réduit (media-query)
     * Repartition des icones en mode mobile et desktop.
         -> Hauteur de bio/botiga selon desktop / mobile
-            -> A quel moment on change ? ((-> devrait se régler tout seul en gérnat le point précédent))
-        -> En format tel, le menu il doit faire la largeur du logo
+            -> A quel moment on change ? ((-> devrait se régler tout seul en gérant le point précédent))
+        
         -> choper la largeur du menu, on l'applique a la largeur des images. 
             Comme les images sont des carrés, on dit que que sera la hauteur des vidéos. 
             -> Comment on calcule la mrge du body ?
@@ -19,7 +16,6 @@ NAVBAR:
 
     
 PAGES: 
-    * #app margin responsive (media-query) (5% sur mobile). combien sur tablette: voir ce que dit internet
     * video:
         - Comportement web 
         - Comportement mobile
@@ -37,3 +33,9 @@ NAVBAR:
 
 pour les liens des sorties audio on mettra que spotify dans un premier temps, 
 dans tous les cas, pour les audio autant que les vidéos, fais-en qu'un de chaque pour tester après je copierai les autres
+
+
+CHOSES À DISCUTER:
+    * "En format tel, le menu il doit faire la largeur du logo":
+    On réduit les espaces. Mais si on applique ca, ca rentre plus. 
+
