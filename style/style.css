@@ -61,6 +61,7 @@ body {
 
 #app { /*all that is not in index: all without navbar and footer*/
     margin: 2rem 20%;
+    transition: 0.4s; /* BYO prefixes */
 }
 
 /* Redéfinir les tags html*/
@@ -196,4 +197,10 @@ div.footer a {
 #instagram:hover img:nth-child(2),
 #tikTok:hover img:nth-child(2)  {
   display: block;
+}
+
+@media (max-width:961px) {
+    #app { 
+        margin: 2rem 7%;
+    }
 }
