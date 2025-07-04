@@ -86,11 +86,13 @@ body {
 }
 
 .page a.imgTitres img {
-    max-width: 28vw;
+    max-width: 33vw;
 }
 
 .page iframe {
     margin: 1rem auto;
+    height: 33vw;
+    width: 100%;
 }
 
 /*NAVBAR*/
@@ -135,8 +137,9 @@ li.logo a, li.bio a, li.botiga a{
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-inline: 20%;
     border-bottom: 1px solid var(--font-red_hover); 
+    margin-inline: auto;
+    max-width: 33vw;
 }
 
 .center li a, .menu li a {
