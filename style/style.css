@@ -29,7 +29,7 @@
     src: url('../public/fonts/Avenir-Heavy-05.woff2') format('woff2'),
         url('../public/fonts/Avenir-Heavy-05.woff') format('woff'),
         url('../public/fonts/Avenir-Heavy-05.ttf') format('truetype');
-    font-weight: 800;
+    font-weight: 800; /* Heavy */
     font-style: normal;  
     font-display: swap;
 }
@@ -39,7 +39,7 @@
     src: url('../public/fonts/Avenir-Black-03.woff2') format('woff2'),
         url('../public/fonts/Avenir-Black-03.woff') format('woff'),
         url('../public/fonts/Avenir-Black-03.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: 900; /* Black */
     font-style: normal;
     font-display: swap;
 }
@@ -72,17 +72,21 @@ body {
     margin-bottom: 1rem;
 } 
 .page p {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     line-height: 1.6;
     text-align: justify;
     text-justify: inter-character;
 }
 
 /*PAGES*/
+.page .divImage, .page .divVideo {
+    margin-bottom: 1rem;
+}
+
 .page a.imgTitres {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .page a.imgTitres img {
@@ -90,9 +94,21 @@ body {
 }
 
 .page iframe {
-    margin: 1rem auto;
+    margin: 1rem auto 0.5rem auto;
     height: 33vw;
     width: 100%;
+}
+
+.label {
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.labelbold {
+    font-weight: 800;
+    display: block;
+    text-align: center;
 }
 
 /*NAVBAR*/
@@ -204,11 +220,12 @@ div.footer a {
 
 @media (max-width:961px) {
     #app { 
-        margin: 2rem 7%;
+        margin: 2rem 3%;
     }
 
     .menu {
         justify-content: center;
-        border-bottom: none;
+        /*border-bottom: none;*/
+        max-width: fit-content;
     }
 }
