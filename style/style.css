@@ -218,14 +218,23 @@ div.footer a {
   display: block;
 }
 
-@media (max-width:961px) {
+@media (max-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops and smaller*/
     #app { 
-        margin: 2rem 3%;
+        margin: 2rem 5%;
     }
 
     .menu {
         justify-content: center;
         /*border-bottom: none;*/
         max-width: fit-content;
+    }
+
+    .page a.imgTitres img {
+        max-width: 85%;
+    }
+
+    .page .divVideo iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 }

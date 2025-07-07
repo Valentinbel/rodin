@@ -8,10 +8,6 @@ NAVBAR:
             -> A quel moment on change ? ((-> devrait se régler tout seul en gérant le point précédent))
         
 PAGES: 
-    ==> Label centré sous les videos
-
-    ==> Images et video: 
-         Faire la version mobile
 
 GLOBAL
     * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
