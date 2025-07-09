@@ -6,10 +6,17 @@ NAVBAR:
     * Repartition des icones en mode mobile et desktop.
         -> Hauteur de bio/botiga selon desktop / mobile
             -> A quel moment on change ? ((-> devrait se régler tout seul en gérant le point précédent))
-        
-PAGES: 
+        -> ou faire 2 fois le bio/botiga. pour mobile et web
+        -> Il faut les sortir de firstLine. 
+    * Ca merde là dessus: 
+            li.botiga img, li.bio img {
+             max-height: 40px;
+             https://claude.ai/chat/bd39f981-53aa-41c4-b581-6b85862729eb
+
 
 GLOBAL
+    * Meta
+    
     * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
     * Vérifie que le lien tailwind dans index est correct. 
 
