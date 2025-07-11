@@ -1,0 +1,28 @@
+A FAIRE: 
+    et ca. https://tailwindcss.com/docs/responsive-design
+    Trouver un equivalent lg: classe width tailwind qui va breaker tout seul ? 
+
+NAVBAR: 
+    * Repartition des icones en mode mobile et desktop.
+        -> Hauteur de bio/botiga selon 
+            -> desktop: À FAIRE : Le baisser
+            -> mobile: Ok
+
+GLOBAL
+    * Meta
+    
+    * Voir ce que tailwind a coupé dans le css et ce qui n'est plus utile. 
+    * Vérifie que le lien tailwind dans index est correct. 
+
+NAVBAR: 
+    * Size max ul class="menu" (la même que images visuels pages): Variable. 
+    * Comportement navbar en mode mbile
+
+pour les liens des sorties audio on mettra que spotify dans un premier temps, 
+dans tous les cas, pour les audio autant que les vidéos, fais-en qu'un de chaque pour tester après je copierai les autres
+
+
+CHOSES À DISCUTER:
+    * "En format tel, le menu il doit faire la largeur du logo":
+    On réduit les espaces. Mais si on applique ca, ca rentre plus. 
+

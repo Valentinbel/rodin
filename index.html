@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rodin</title>
-    <link type="text/css" rel="stylesheet" href="style/style.css"/>
+    <title>rodín</title>
+    <link rel="icon" type="image/x-icon" href="./public/img/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link type="text/css" rel="stylesheet" href="./style/style.css"/>
 </head>
 <body>
-    <nav>
+    <nav> 
         <div class="center">
-            <ul>
+            <div class="bio2">
+                <a href="/bio">
+                    <img src="./public/img/header/bio.png" alt="bio" />
+                    <span>BIO</span>
+                </a>
+            </div>
+            <div class="botiga2">
+                <a href="/botiga">
+                    <img src="./public/img/header/botiga.png" alt="botiga" />
+                    <span>BOTIGA</span>
+                </a>
+            </div>
+            <ul class="firstLine">
                 <li class="bio">
                     <a href="/bio">
-                        <img src="img/header/bio.png" alt="bio" />
-                    </a>
-                </li>
-                <li class="botiga">
-                    <a href="/botiga">
-                        <img src="img/header/botiga.png" alt="botiga" />
+                        <img src="./public/img/header/bio.png" alt="bio" />
+                        <span>BIO</span>
                     </a>
                 </li>
                 <li class="logo" >
                     <a href="/">
-                        <img src="img/header/rodin.png" alt="Logo" />
+                        <img src="./public/img/header/rodin.png" alt="Logo" />
                     </a>
                 </li>
+                <li class="botiga">
+                    <a href="/botiga">
+                        <img src="./public/img/header/botiga.png" alt="botiga" />
+                        <span>BOTIGA</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
                 <li><a href="/musica">MUSICA</a></li>
                 <li><a href="/video">VÍDEO</a></li>
-                
+                <li><a href="/concerts">CONCERTS</a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +53,31 @@
     </div>
 
     <footer>
-        
+        <div class="footer">
+            <a id="spotify" href="https://open.spotify.com/intl-fr/artist/7cMWfV0yjQ0GPs8fiDp3UA" target="_blank">
+                <img src="./public/img/sociau/spot.png" alt="spotify" />
+                <img src="./public/img/sociau/spot_hover.png" alt="spotify" />
+            </a>
+            <a id="apple" href="https://music.apple.com/fr/artist/rod%C3%ADn/1495701565" target="_blank">
+                <img src="./public/img/sociau/apple.png" alt="apple" />
+                <img src="./public/img/sociau/apple_hover.png" alt="apple" />
+            </a>
+            <a id="youTube" href="https://www.youtube.com/c/rodínmusica" target="_blank">
+                <img src="./public/img/sociau/yt.png" alt="youTube" />
+                <img src="./public/img/sociau/yt_hover.png" alt="youTube" />
+            </a>
+            <a id="instagram" href="https://www.instagram.com/rodiin" target="_blank">
+                <img src="./public/img/sociau/insta.png" alt="instagram" />
+                <img src="./public/img/sociau/insta_hover.png" alt="instagram" />
+            </a>
+            <a id="tikTok" href="https://www.tiktok.com/@_rodiin_" target="_blank">
+                <img src="./public/img/sociau/tktk.png" alt="tikTok" />
+                <img src="./public/img/sociau/tktk_hover.png" alt="tikTok" />
+            </a>
+        </div>
+        <p class="footer">
+            @ 2050 Rodin. All rights reserved.
+        </p>
     </footer>
 </body>
 <script type="module" src="./index.js"></script>

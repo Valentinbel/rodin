@@ -58,17 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 export default { router };
-
-
-
-/*import routes from "./routes.js";
-
-const router = path => {
-    window.history.pushState({}, '', path);
-
-    routes.forEach(route => {
-        if(route.path === path)
-            document.getElementById('app').innerHTML = route.templateUrl;
-    })
-}
-export default router;*/

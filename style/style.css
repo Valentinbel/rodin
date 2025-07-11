@@ -1,63 +1,273 @@
 :root {
-    --bg-white : #ffffff;
-    --font-red : #f9095a;
+    --bg-white : #fffef8;
+    --font-red : #e3003e;
+    --font-red_hover : #e35b7f;
     --darkBlue: #1a0274;
 }
+@font-face {
+    font-family: 'Avenir';
+    src: url('../public/fonts/Avenir-Light-07.woff2') format('woff2'),
+        url('../public/fonts/Avenir-Light-07.woff') format('woff'),
+        url('../public/fonts/Avenir-Light-07.ttf') format('truetype');
+    font-weight: 300; /* ou light */
+    font-style: normal;
+    font-display: swap;
+}
 
-body {
+@font-face {
+    font-family: 'Avenir';
+    src: url('../public/fonts/Avenir-Medium-09.woff2') format('woff2'),
+        url('../public/fonts/Avenir-Medium-09.woff') format('woff'),
+        url('../public/fonts/Avenir-Medium-09.ttf') format('truetype');
+    font-weight: 500; /* ou medium */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../public/fonts/Avenir-Heavy-05.woff2') format('woff2'),
+        url('../public/fonts/Avenir-Heavy-05.woff') format('woff'),
+        url('../public/fonts/Avenir-Heavy-05.ttf') format('truetype');
+    font-weight: 800; /* Heavy */
+    font-style: normal;  
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../public/fonts/Avenir-Black-03.woff2') format('woff2'),
+        url('../public/fonts/Avenir-Black-03.woff') format('woff'),
+        url('../public/fonts/Avenir-Black-03.ttf') format('truetype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 300;
+    background-color: var(--bg-white);
+    color: var(--font-red);
+}
+
+#app { /*all that is not in index: all without navbar and footer*/
+    margin: 2rem 20%;
+    transition: 0.4s;
+}
+
+/* Redéfinir les tags html*/
+.page h1 {
+    font-size: 2.25rem;/* 36px */
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+} 
+.page p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+/*PAGES*/
+.page .divImage, .page .divVideo {
+    margin-bottom: 1rem;
+}
+
+.page a.imgTitres {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.page a.imgTitres img {
+    max-width: 33vw;
+}
+
+.page iframe {
+    margin: 1rem auto 0.5rem auto;
+    height: 33vw;
+    width: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.label {
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.labelbold {
+    font-weight: 800;
+    display: block;
+    text-align: center;
 }
 
 /*NAVBAR*/
-ul {
-    list-style-type: none;
-    margin: 1rem 2rem;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--bg-white);
+nav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+}
+
+ul {
+    overflow: hidden;
 }
 
 li {
     display: inline-block;
 }
 
-li a {
+.center {
+    text-align: center;
+    padding-top: 2dvh;
+    background-color: var(--bg-white);
+}
+
+.bio2, .botiga2 {
+    /*display: inline-flex;*/
+    display: block;
+    padding: 0 2vw;
+    background-color: antiquewhite;
+}
+
+.bio2 {
+    float: inline-start;
+}
+
+.botiga2 {
+    float: inline-end;
+}
+
+.firstLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+li.logo {
+    margin-inline: auto;
+}
+
+li.bio, li.botiga {
+    background-color: aliceblue;
+    display: none!important;
+}
+
+li.botiga a, li.bio a , .bio2 a, .botiga2 a {
+    /*margin: 0 2vw;*/
+    font-weight: 800;
+}
+
+li.logo img {
+    max-height: 60px;
+}
+
+li.botiga img, li.bio img, .bio2 img, .botiga2 img {
+    max-height: 35px;
+}
+
+li.logo a, li.bio a, li.botiga a{
+    padding-bottom: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--font-red_hover); 
+    margin-inline: auto;
+    max-width: 33vw;
+    overflow: visible
+}
+
+.center li a, .menu li a {
     display: block;
     color: var(--font-red);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 2vw;
     text-decoration: none;
 }
+
+.menu li a {
+    padding: 0.5dvh;
+    font-weight: 500;
+}
   
-/*li a:hover {
-    background-color: var(--darkBlue);
-}*/
-
-li.bio img, li.botiga img {
-    height: 60px;
+.menu li a:hover {
+    color: var(--font-red_hover);
 }
-
-li.bio {
-    float: left;
-}
-
-li.botiga {
-    float: right;
-}
-
-.center {
-    text-align: center; 
-}
-
-.logo {
-    display: block;
-}
-
-.logo img {
-    height: 50px;
-  }
   
+/*FOOTER sociau*/
+footer {
+  margin-top: auto;
+  padding: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+div.footer img {
+    max-height: 35px;
+}
+
+#spotify img:nth-child(2),
+#apple img:nth-child(2),
+#youTube img:nth-child(2),
+#instagram img:nth-child(2),
+#tikTok img:nth-child(2) {
+  display: none; 
+}
+
+#spotify:hover img:nth-child(1), 
+#apple:hover img:nth-child(1), 
+#youTube:hover img:nth-child(1), 
+#instagram:hover img:nth-child(1), 
+#tikTok:hover img:nth-child(1) {
+  display: none;
+}
+
+#spotify:hover img:nth-child(2),
+#apple:hover img:nth-child(2), 
+#youTube:hover img:nth-child(2), 
+#instagram:hover img:nth-child(2),
+#tikTok:hover img:nth-child(2)  {
+  display: block;
+}
+
+@media (max-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops and smaller*/
+    #app { 
+        margin: 2rem 5%;
+    }
+
+    /*li.botiga a, li.bio a, .bio2 a, .botiga2 a {
+        margin: 0;
+    }*/
+
+    .menu {
+        justify-content: center;
+        max-width: fit-content;
+    }
+    
+    li.bio, li.botiga {
+        display: inline-block;
+    }
+
+    .page a.imgTitres img {
+        max-width: 85%;
+    }
+
+    .page .divVideo iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
