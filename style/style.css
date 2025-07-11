@@ -96,7 +96,6 @@ body {
 .page iframe {
     margin: 1rem auto 0.5rem auto;
     height: 33vw;
-    /*width: 100%;*/
     width: auto;
     aspect-ratio: 16 / 9;
 }
@@ -134,17 +133,37 @@ li {
     background-color: var(--bg-white);
 }
 
+.bio2, .botiga2 {
+    /*display: inline-flex;*/
+    display: block;
+    padding: 0 2vw;
+    background-color: antiquewhite;
+}
+
+.bio2 {
+    float: inline-start;
+}
+
+.botiga2 {
+    float: inline-end;
+}
+
 .firstLine {
     display: flex;
     justify-content: space-between;
 }
 
-li.bio, li.botiga {
-    background-color: aliceblue;
+li.logo {
+    margin-inline: auto;
 }
 
-li.botiga a, li.bio a {
-    margin: 0 3vw;
+li.bio, li.botiga {
+    background-color: aliceblue;
+    display: none!important;
+}
+
+li.botiga a, li.bio a , .bio2 a, .botiga2 a {
+    /*margin: 0 2vw;*/
     font-weight: 800;
 }
 
@@ -152,8 +171,8 @@ li.logo img {
     max-height: 60px;
 }
 
-li.botiga img, li.bio img {
-    max-height: 40px;
+li.botiga img, li.bio img, .bio2 img, .botiga2 img {
+    max-height: 35px;
 }
 
 li.logo a, li.bio a, li.botiga a{
@@ -166,6 +185,7 @@ li.logo a, li.bio a, li.botiga a{
     border-bottom: 1px solid var(--font-red_hover); 
     margin-inline: auto;
     max-width: 33vw;
+    overflow: visible
 }
 
 .center li a, .menu li a {
@@ -197,11 +217,7 @@ footer {
 }
 
 div.footer img {
-    max-height: 3rem;
-}
-
-div.footer a {
-    max-height: 3rem;
+    max-height: 35px;
 }
 
 #spotify img:nth-child(2),
@@ -233,10 +249,17 @@ div.footer a {
         margin: 2rem 5%;
     }
 
+    /*li.botiga a, li.bio a, .bio2 a, .botiga2 a {
+        margin: 0;
+    }*/
+
     .menu {
         justify-content: center;
-        /*border-bottom: none;*/
         max-width: fit-content;
+    }
+    
+    li.bio, li.botiga {
+        display: inline-block;
     }
 
     .page a.imgTitres img {
