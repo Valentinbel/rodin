@@ -1,3 +1,3 @@
 # rodin
 
-project in javascript vanilla
+Static project in javascript vanilla that contains essentially html and css (and routing). 
