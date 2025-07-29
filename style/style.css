@@ -61,6 +61,10 @@ body {
     color: var(--font-red);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #app { /*all that is not in index: all without navbar and footer*/
     margin: 2rem 20%;
     transition: 0.4s;
