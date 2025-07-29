@@ -52,8 +52,10 @@ html, body {
 }
 body {
     display: flex;
+    height: auto;
     flex-direction: column;
     font-family: 'Avenir', sans-serif;
+    overflow-x: hidden;
     font-weight: 300;
     background-color: var(--bg-white);
     color: var(--font-red);
@@ -128,23 +130,27 @@ li {
 }
 
 .center {
+    position: relative;
     text-align: center;
     padding-top: 2dvh;
     background-color: var(--bg-white);
 }
 
-.bio2, .botiga2 {
-    /*display: inline-flex;*/
+.bio, .botiga {
+    position: absolute;
     display: block;
+    bottom: 0;
     padding: 0 2vw;
 }
 
-.bio2 {
+.bio {
     float: inline-start;
+    left: 0;
 }
 
-.botiga2 {
+.botiga {
     float: inline-end;
+    right: 0;
 }
 
 .firstLine {
@@ -156,13 +162,7 @@ li.logo {
     margin-inline: auto;
 }
 
-li.bio, li.botiga {
-    background-color: aliceblue;
-    display: none!important;
-}
-
-li.botiga a, li.bio a , .bio2 a, .botiga2 a {
-    /*margin: 0 2vw;*/
+.bio a, .botiga a {
     font-weight: 800;
 }
 
@@ -170,11 +170,11 @@ li.logo img {
     max-height: 60px;
 }
 
-li.botiga img, li.bio img, .bio2 img, .botiga2 img {
+.bio img, .botiga img {
     max-height: 35px;
 }
 
-li.logo a, li.bio a, li.botiga a{
+li.logo a {
     padding-bottom: 0;
 }
 
@@ -196,7 +196,7 @@ li.logo a, li.bio a, li.botiga a{
 }
 
 .menu li a {
-    padding: 0.5dvh;
+    padding: 0.5dvh 2dvw 0 2dvw;
     font-weight: 500;
 }
   
@@ -248,17 +248,13 @@ div.footer img {
         margin: 2rem 5%;
     }
 
-    /*li.botiga a, li.bio a, .bio2 a, .botiga2 a {
-        margin: 0;
-    }*/
+    .bio, .botiga {
+        position: static;
+    }
 
     .menu {
         justify-content: center;
         max-width: fit-content;
-    }
-    
-    li.bio, li.botiga {
-        display: inline-block;
     }
 
     .page a.imgTitres img {
