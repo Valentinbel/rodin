@@ -52,7 +52,7 @@ html, body {
 }
 body {
     display: flex;
-    height: 100%;
+    height: auto;
     flex-direction: column;
     font-family: 'Avenir', sans-serif;
     overflow-x: hidden;
@@ -185,7 +185,7 @@ li.logo a {
 .menu {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--font-red_hover); 
+    /*border-bottom: 1px solid var(--font-red_hover); */
     margin-inline: auto;
     max-width: 33vw;
     overflow: visible
@@ -217,6 +217,7 @@ footer {
 .footer {
     display: flex;
     justify-content: center;
+    margin-top: 0.5rem;
 }
 
 div.footer img {
@@ -227,7 +228,8 @@ div.footer img {
 #apple img:nth-child(2),
 #youTube img:nth-child(2),
 #instagram img:nth-child(2),
-#tikTok img:nth-child(2) {
+#tikTok img:nth-child(2),
+#linktree img:nth-child(2) {
   display: none; 
 }
 
@@ -235,7 +237,8 @@ div.footer img {
 #apple:hover img:nth-child(1), 
 #youTube:hover img:nth-child(1), 
 #instagram:hover img:nth-child(1), 
-#tikTok:hover img:nth-child(1) {
+#tikTok:hover img:nth-child(1),
+#linktree:hover img:nth-child(1) {
   display: none;
 }
 
@@ -243,11 +246,17 @@ div.footer img {
 #apple:hover img:nth-child(2), 
 #youTube:hover img:nth-child(2), 
 #instagram:hover img:nth-child(2),
-#tikTok:hover img:nth-child(2)  {
+#tikTok:hover img:nth-child(2), 
+#linktree:hover img:nth-child(2) {
   display: block;
 }
 
 @media (max-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops and smaller*/
+    
+    html, body {
+        font-size: small;
+    }
+
     #app { 
         margin: 2rem 5%;
     }
