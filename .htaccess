@@ -1,0 +1,9 @@
+RewriteEngine On
+# Ne pas rediriger les fichiers existants
+RewriteCond %{REQUEST_FILENAME} !-f
+# Ne pas rediriger les dossiers existants  
+RewriteCond %{REQUEST_FILENAME} !-d
+# Exclure les routes d'API (si vous en avez)
+RewriteCond %{REQUEST_URI} !^/api/
+# Rediriger tout le reste vers index.html
+RewriteRule . /index.html [L]
