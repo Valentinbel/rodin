@@ -11,7 +11,7 @@
 <body>
     <nav> 
         <div class="center">
-            <div class="bio">
+            <div  href="/bio" class="bio" onclick="route('bio')">
                 <a href="/bio">
                     <img src="./public/img/header/bio.png" alt="bio" />
                     <span>BIO</span>
@@ -25,16 +25,16 @@
             </div>
             <ul class="firstLine">
                 <li class="logo" >
-                    <a href="/">
+                    <a href="/" onclick="route('/')">
                         <img src="./public/img/header/rodin.png" alt="Logo" />
                     </a>
                 </li>
             </ul>
             <div>
                 <ul class="menu">
-                    <li><a href="/musica">MÚSICA</a></li>
-                    <li><a href="/video">VÍDEO</a></li>
-                    <li><a href="/concerts">CONCERTS</a></li>
+                    <li><a href="/musica" onclick="route()">MÚSICA</a></li>
+                    <li><a href="/video" onclick="route()">VÍDEO</a></li>
+                    <li><a href="/concerts" onclick="route()">CONCERTS</a></li>
                 </ul>
             </div>
         </div>
@@ -74,6 +74,6 @@
             © 2050 TOTS DRETS RESERVATS. </span>
         </p>
     </footer>
+    <script src="./router.js"></script>
 </body>
-<script type="module" src="./index.js"></script>
 </html>

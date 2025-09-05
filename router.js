@@ -1,60 +1,29 @@
-import routes from './routes.js';
+const route = (event) => {
+    event = event || window.event;
+    event.preventDefault();
+    window.history.pushState({}, "", event.target.href);
+    handleLocation();
+};
 
-// Fonction pour charger le contenu HTML depuis un fichier
-async function loadTemplate(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Erreur lors du chargement du template: ${response.status}`);
-        }
-        return await response.text();
-    } catch (error) {
-        console.error('Erreur:', error);
-        return '<p>Erreur lors du chargement du template</p>';
-    }
-}
+const routes = {
+    404: "/pages/404.html",
+    "/": "/pages/home.html",
+    "/bio": "/pages/bio.html",
+    "/contact": "/pages/contact.html", ///////////////////
+    "/musica": "/pages/musica.html",
+    "/video": "/pages/video.html",
+    "/concerts": "/pages/concerts.html",
+    "/botiga": "/pages/botiga.html", //////////////////
+};
 
-// Fonction pour rendre la page
-async function router() {
-    // Récupérer l'URL actuelle
+const handleLocation = async () => {
     const path = window.location.pathname;
-    
-    // Trouver la route correspondante
-    const route = routes.find(route => route.path === path) || routes[0];
-    
-    // Élément où injecter le contenu
-    const appElement = document.getElementById('app');
-    
-    // Si la route utilise un templateUrl, charger le fichier HTML
-    if (route.templateUrl) {
-        const content = await loadTemplate(route.templateUrl);
-        appElement.innerHTML = content;
-    } else if (route.template) {
-        // Fallback pour utiliser le template inline si nécessaire
-        appElement.innerHTML = route.template;
-    } else {
-        appElement.innerHTML = '<p>Page non trouvée</p>';
-    }
-}
+    const route = routes[path] || routes[404];
+    const html = await fetch(route).then((data) => data.text());
+    document.getElementById("app").innerHTML = html;
+};
 
-// Écouteur d'événements pour la navigation
-window.addEventListener('popstate', router);
+window.onpopstate = handleLocation;
+window.route = route;
 
-// Intercepter les clics sur les liens pour la navigation SPA
-document.addEventListener('click', e => {
-    if (e.target.matches('a')) {
-        e.preventDefault();
-        const href = e.target.getAttribute('href');
-        history.pushState(null, null, href);
-        router();
-    }
-});
-
-// Initialiser le router
-document.addEventListener('DOMContentLoaded', () => {
-    // Gérer l'état initial
-    history.pushState(null, null, window.location.pathname);
-    router();
-});
-
-export default { router };
+handleLocation();
