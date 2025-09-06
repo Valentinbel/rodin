@@ -1,4 +1,9 @@
 RewriteEngine On
+
+# Forcer HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Ne pas rediriger les fichiers existants
 RewriteCond %{REQUEST_FILENAME} !-f
 # Ne pas rediriger les dossiers existants  
