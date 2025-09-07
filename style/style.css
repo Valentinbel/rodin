@@ -118,6 +118,15 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+.heavy {
+    font-weight: 800;
+}
+
+.passats {
+    opacity: 0.5;
+    font-style: italic;
+}
+
 /*NAVBAR*/
 nav {
     position: -webkit-sticky; /* Safari */
