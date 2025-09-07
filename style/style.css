@@ -154,6 +154,7 @@ li {
     display: block;
     bottom: 0;
     padding: 0 2vw;
+    font-weight: 800;
 }
 
 .bio {
@@ -173,10 +174,6 @@ li {
 
 li.logo {
     margin-inline: auto;
-}
-
-.bio a, .botiga a {
-    font-weight: 800;
 }
 
 li.logo img {
@@ -271,6 +268,7 @@ div.footer img {
 
     .bio, .botiga {
         position: static;
+        padding: 0 2vw;
     }
 
     .menu {
