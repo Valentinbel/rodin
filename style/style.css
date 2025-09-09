@@ -65,6 +65,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+b, strong {
+    font-weight: 800;
+}
+
 #app { /*all that is not in index: all without navbar and footer*/
     margin: 2rem 20%;
     transition: 0.4s;
@@ -72,7 +76,7 @@ body::-webkit-scrollbar {
 
 /* Redéfinir les tags html*/
 .page h1 {
-    font-size: 2.25rem;/* 36px */
+    font-size: 1.4rem;
     font-weight: 900;
     line-height: 1.2;
     margin-bottom: 1rem;
