@@ -159,6 +159,7 @@ li {
 
 .bio {
     float: inline-start;
+    cursor: pointer;
     left: 0;
 }
 
