@@ -217,7 +217,27 @@ li.logo a {
 .menu li a:hover {
     color: var(--font-red_hover);
 }
-  
+
+/* EPK */
+.fullHeight {
+    height: 80vh;
+    width: auto;
+}
+
+.fullHeight h1 {
+    padding-top: 3rem;
+    font-size: 3.4rem;
+    font-weight: 900;
+
+    margin-bottom: 1rem;
+}
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
 /*FOOTER sociau*/
 footer {
   margin-top: auto;
