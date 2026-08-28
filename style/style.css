@@ -69,9 +69,14 @@ b, strong {
     font-weight: 800;
 }
 
+button {
+    cursor: pointer;
+}
+
 #app { /*all that is not in index: all without navbar and footer*/
     margin: 2rem 20%;
     transition: 0.4s;
+    z-index: 1;
 }
 
 /* Redéfinir les tags html*/
@@ -81,7 +86,7 @@ b, strong {
     line-height: 1.2;
     margin-bottom: 1rem;
 } 
-.page p {
+.page p{
     margin: 1rem 0;
     line-height: 1.6;
     text-align: justify;
@@ -219,25 +224,62 @@ li.logo a {
 }
 
 /* EPK */
-.fullHeight {
-    height: 80vh;
-    width: auto;
+.video_epk {
+    position: fixed; /*absolute*/ /*fixed*/
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
-.fullHeight h1 {
-    padding-top: 3rem;
-    font-size: 3.4rem;
-    font-weight: 900;
-
-    margin-bottom: 1rem;
-}
-.blue {
-    background-color: blue;
+.logotop img {
+    margin-inline: auto;
+    margin-bottom: 50vh;
+    max-width: 33vw;
 }
 
-.red {
-    background-color: red;
+.lengas, #epkPdf {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-evenly;
 }
+
+.lengas img, #epkPdf img {
+    max-height: 64px;
+}
+
+.fonsDegradat {
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(39, 22, 104, 1) 100%);
+    opacity: 0.8;
+}
+
+.fonsDegradat p {
+    margin: 1rem 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-character;
+    color: var(--bg-white);
+    margin-bottom: 15vh;
+}
+
+#email, #tel{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#email img, #tel img {
+    max-width: 33vw;
+}
+
+.footerEpk {
+    display: block;
+    color: var(--bg-white);
+}
+
+
 /*FOOTER sociau*/
 footer {
   margin-top: auto;
@@ -312,5 +354,10 @@ div.footer img {
     
     li.logo img {
     max-height: 50px;
-    } 
+    }
+
+    /* EPK */
+    #email img, #tel img {
+        max-width: 50vw;
+    }
 }

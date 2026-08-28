@@ -1,0 +1,9 @@
+
+* gras, liens, retours lignes... des textes cat et fr.
+
+* liens pdf press, rider, dossier:
+    Telecharger les liens du dropbox
+    Les mettres sur le site
+    Remplacer les liens dans epk.html par les corrects
+
+* Confirmer comportement ecrans

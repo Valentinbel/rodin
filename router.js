@@ -15,11 +15,9 @@ const routes = {
     404: "/pages/404.html",
     "/": "/pages/home.html",
     "/bio": "/pages/bio.html",
-    "/contact": "/pages/contact.html", ///////////////////
     "/musica": "/pages/musica.html",
     "/video": "/pages/video.html",
     "/concerts": "/pages/concerts.html",
-    "/botiga": "/pages/botiga.html", //////////////////
     "/epk": "/pages/epk/epk.html",
 };
 
@@ -57,3 +55,5 @@ handleLocation();
 
 console.log("router js");
 document.getElementById("nav").style.display = "block";
+document.getElementById("video_epk").style.display = "none";
+document.getElementById("footer").style.display = "block";
