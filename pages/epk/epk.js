@@ -11,6 +11,7 @@ document.getElementById("noneAtLoad").style.display = "none";
 function displayLenga(lenga) {
     document.getElementById("blockATLoad").style.display = "none";
     document.getElementById("noneAtLoad").style.display = "block";
+    document.getElementById('body').classList.add('gradient-background');
 
     const videos = document.getElementById('videos');
     videos.querySelectorAll('iframe[data-src]').forEach(iframe => {

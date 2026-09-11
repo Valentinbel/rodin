@@ -62,6 +62,15 @@ body {
     color: var(--font-red);
 }
 
+#body.gradient-background {
+    background: #150E29;
+    background: linear-gradient(
+        180deg,
+        rgba(21, 14, 41, 1) 0%,
+        rgba(3, 3, 6, 1) 100%
+    );
+}
+
 body::-webkit-scrollbar {
     display: none;
 }

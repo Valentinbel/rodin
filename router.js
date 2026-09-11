@@ -57,3 +57,4 @@ console.log("router js");
 document.getElementById("nav").style.display = "block";
 document.getElementById("video_epk").style.display = "none";
 document.getElementById("footer").style.display = "block";
+document.getElementById('body').classList.remove('gradient-background');
