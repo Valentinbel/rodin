@@ -367,4 +367,8 @@ div.footer img {
     #email img, #tel img {
         max-width: 50vw;
     }
+
+    .lengas img {
+        margin-top: 10vh;
+    }
 }
