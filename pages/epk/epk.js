@@ -9,20 +9,28 @@ document.getElementById("noneAtLoad").style.display = "none";
 
 
 function displayLenga(lenga) {
-    console.log("display Lengas");
     document.getElementById("blockATLoad").style.display = "none";
     document.getElementById("noneAtLoad").style.display = "block";
 
+    const videos = document.getElementById('videos');
+    videos.querySelectorAll('iframe[data-src]').forEach(iframe => {
+        iframe.src = iframe.dataset.src;
+        iframe.removeAttribute('data-src');
+    });
+
     if (lenga === "cat") {
-        console.log("cat");
         document.getElementById("catala").style.display = "block";
         document.getElementById("frances").style.display = "none";
+
+        document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/rodin_RIDER2026_CAT.pdf";
+        document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingCAT.pdf";
     }
     if (lenga === "fr") {
-        console.log("frrrr");
         document.getElementById("frances").style.display = "block";
         document.getElementById("catala").style.display = "none";
 
+        document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/pereu_bookingFR.pdf";
+        document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingFR.pdf";
     }
 
 }

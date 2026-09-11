@@ -50,6 +50,7 @@ html, body {
     padding: 0 !important;
     margin: 0 !important;
 }
+
 body {
     display: flex;
     height: auto;
@@ -86,7 +87,7 @@ button {
     line-height: 1.2;
     margin-bottom: 1rem;
 } 
-.page p{
+.page p {
     margin: 1rem 0;
     line-height: 1.6;
     text-align: justify;
