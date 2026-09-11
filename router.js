@@ -48,10 +48,10 @@ const handleLocation = async () => {
     });
 
     /* THEME COLOR MOBILE */
-     if (path === "/epk") 
+    if (path === "/epk") 
         setThemeColor('#030306');
-        else
-            setThemeColor('#fffef8')
+    else
+        setThemeColor('#fffef8')
 };
 
 window.onpopstate = handleLocation;
