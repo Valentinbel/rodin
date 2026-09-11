@@ -232,6 +232,7 @@ li.logo a {
     right: 0 !important;
     bottom: 0 !important;
     width: 100vw !important;
+    min-height: calc(100lvh + 60px);
     height: 100dvh !important;
     object-fit: cover !important;
     object-position: center;
