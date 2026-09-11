@@ -257,6 +257,10 @@ li.logo a {
     max-width: 33vw;
 }
 
+.logoDuBas img {
+    margin-top: 10vh;
+}
+
 .lengas, #epkPdf {
     display: flex;
     margin-top: 0.5rem;
