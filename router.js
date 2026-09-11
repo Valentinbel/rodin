@@ -46,12 +46,30 @@ const handleLocation = async () => {
 
         oldScript.replaceWith(newScript);
     });
+
+    /* THEME COLOR MOBILE */
+     if (path === "/epk") 
+        setThemeColor('#030306');
+        else
+            setThemeColor('#fffef8')
 };
 
 window.onpopstate = handleLocation;
 window.route = route;
 
 handleLocation();
+
+function setThemeColor(color) {
+    let metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    if (!metaThemeColor) {
+        metaThemeColor = document.createElement('meta');
+        metaThemeColor.name = 'theme-color';
+        document.head.appendChild(metaThemeColor);
+    }
+
+    metaThemeColor.content = color;
+}
 
 console.log("router js");
 document.getElementById("nav").style.display = "block";

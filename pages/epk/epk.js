@@ -30,7 +30,7 @@ function displayLenga(lenga) {
         document.getElementById("frances").style.display = "block";
         document.getElementById("catala").style.display = "none";
 
-        document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/pereu_bookingFR.pdf";
+        document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/rodin_RIDER2026_FR.pdf";
         document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingFR.pdf";
     }
 

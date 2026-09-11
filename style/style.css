@@ -60,6 +60,8 @@ body {
     font-weight: 300;
     background-color: var(--bg-white);
     color: var(--font-red);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 #body.gradient-background {
@@ -295,7 +297,6 @@ li.logo a {
     display: block;
     color: var(--bg-white);
 }
-
 
 /*FOOTER sociau*/
 footer {
