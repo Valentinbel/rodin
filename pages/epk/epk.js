@@ -18,34 +18,85 @@ function displayLenga(lenga) {
         iframe.src = iframe.dataset.src;
         iframe.removeAttribute('data-src');
     });
+    
+    if (lenga === "esp") {
+        document.getElementById("espanyol").style.display = "block";
+        document.getElementById("catala").style.display = "none";
+        document.getElementById("frances").style.display = "none";
+        document.getElementById("english").style.display = "none";
+
+        document.getElementById("vid_espanyol").style.display = "block";
+        document.getElementById("vid_catala").style.display = "none";
+        document.getElementById("vid_frances").style.display = "none";
+        document.getElementById("vid_english").style.display = "none";
+
+        document.getElementById("agenda_espanyol").style.display = "block";
+        document.getElementById("agenda_catala").style.display = "none";
+        document.getElementById("agenda_frances").style.display = "none";
+        document.getElementById("agenda_english").style.display = "none";
+
+        // REMPLACER RIDER ET DOSSIER PAR LES LIENS CORRECTS POUR ESPAGNOL
+        document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/rodin_RIDER2026_CAT.pdf";
+        document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingCAT.pdf";
+    }
 
     if (lenga === "cat") {
+        document.getElementById("espanyol").style.display = "none";
         document.getElementById("catala").style.display = "block";
         document.getElementById("frances").style.display = "none";
+        document.getElementById("english").style.display = "none";
          
+        document.getElementById("vid_espanyol").style.display = "none";
         document.getElementById("vid_catala").style.display = "block";
         document.getElementById("vid_frances").style.display = "none";
+        document.getElementById("vid_english").style.display = "none";
         
+        document.getElementById("agenda_espanyol").style.display = "none";
         document.getElementById("agenda_catala").style.display = "block";
         document.getElementById("agenda_frances").style.display = "none";
-
+        document.getElementById("agenda_english").style.display = "none";
 
         document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/rodin_RIDER2026_CAT.pdf";
         document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingCAT.pdf";
     }
+
     if (lenga === "fr") {
-        document.getElementById("frances").style.display = "block";
+        document.getElementById("espanyol").style.display = "none";
         document.getElementById("catala").style.display = "none";
+        document.getElementById("frances").style.display = "block";
+        document.getElementById("english").style.display = "none";
         
-       document.getElementById("vid_frances").style.display = "block";
+        document.getElementById("vid_espanyol").style.display = "none";
         document.getElementById("vid_catala").style.display = "none";
+        document.getElementById("vid_frances").style.display = "block";
+        document.getElementById("vid_english").style.display = "none";
         
-        document.getElementById("agenda_frances").style.display = "block";
+        document.getElementById("agenda_espanyol").style.display = "none";
         document.getElementById("agenda_catala").style.display = "none";
-        
+        document.getElementById("agenda_frances").style.display = "block";
+        document.getElementById("agenda_english").style.display = "none";
 
         document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/rodin_RIDER2026_FR.pdf";
         document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingFR.pdf";
     }
+    if (lenga === "eng") {
+        document.getElementById("espanyol").style.display = "none";
+        document.getElementById("frances").style.display = "none";
+        document.getElementById("catala").style.display = "none";
+        document.getElementById("english").style.display = "block";
 
+        document.getElementById("vid_espanyol").style.display = "none";
+        document.getElementById("vid_catala").style.display = "none";
+        document.getElementById("vid_frances").style.display = "none";
+        document.getElementById("vid_english").style.display = "block";
+
+        document.getElementById("agenda_espanyol").style.display = "none";
+        document.getElementById("agenda_catala").style.display = "none";
+        document.getElementById("agenda_frances").style.display = "none";
+        document.getElementById("agenda_english").style.display = "block";
+
+        // REMPLACER RIDER ET DOSSIER PAR LES LIENS CORRECTS POUR ANGLAIS
+        document.getElementById("rider").href="https://neblum.art/Images/pdf/pereu/rodin_RIDER2026_ENG.pdf";
+        document.getElementById("dossier").href="https://neblum.art/Images/pdf/pereu/pereu_bookingENG.pdf";
+    }
 }
